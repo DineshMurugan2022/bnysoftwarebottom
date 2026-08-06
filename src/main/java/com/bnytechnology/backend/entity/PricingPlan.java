@@ -23,7 +23,7 @@ public class PricingPlan extends Auditable {
     @Column(name = "price_yearly", precision = 10, scale = 2)
     private BigDecimal priceYearly;
 
-    @Column(columnDefinition = "CHAR(3)")
+    @Column(length = 3)
     private String currency = "INR";
 
     @Column(name = "is_featured")
